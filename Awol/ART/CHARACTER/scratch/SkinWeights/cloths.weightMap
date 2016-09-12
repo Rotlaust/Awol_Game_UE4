@@ -1,0 +1,33 @@
+// Exported skin weight map file
+// 
+geo_Cloths	root	geo_Cloths_root.iff
+geo_Cloths	pelvis	geo_Cloths_pelvis.iff
+geo_Cloths	chian_01	geo_Cloths_chian_01.iff
+geo_Cloths	chian_02	geo_Cloths_chian_02.iff
+geo_Cloths	chian_03	geo_Cloths_chian_03.iff
+geo_Cloths	spine_01	geo_Cloths_spine_01.iff
+geo_Cloths	spine_02	geo_Cloths_spine_02.iff
+geo_Cloths	spine_03	geo_Cloths_spine_03.iff
+geo_Cloths	clavicle_l	geo_Cloths_clavicle_l.iff
+geo_Cloths	upperarm_l	geo_Cloths_upperarm_l.iff
+geo_Cloths	lowerarm_l	geo_Cloths_lowerarm_l.iff
+geo_Cloths	upperarm_twist_01_l	geo_Cloths_upperarm_twist_01_l.iff
+geo_Cloths	clavicle_r	geo_Cloths_clavicle_r.iff
+geo_Cloths	upperarm_r	geo_Cloths_upperarm_r.iff
+geo_Cloths	lowerarm_r	geo_Cloths_lowerarm_r.iff
+geo_Cloths	lowerarm_twist_01_r	geo_Cloths_lowerarm_twist_01_r.iff
+geo_Cloths	upperarm_twist_01_r	geo_Cloths_upperarm_twist_01_r.iff
+geo_Cloths	neck_01	geo_Cloths_neck_01.iff
+geo_Cloths	head	geo_Cloths_head.iff
+geo_Cloths	thigh_l	geo_Cloths_thigh_l.iff
+geo_Cloths	calf_l	geo_Cloths_calf_l.iff
+geo_Cloths	calf_twist_01_l	geo_Cloths_calf_twist_01_l.iff
+geo_Cloths	foot_l	geo_Cloths_foot_l.iff
+geo_Cloths	ball_l	geo_Cloths_ball_l.iff
+geo_Cloths	thigh_twist_01_l	geo_Cloths_thigh_twist_01_l.iff
+geo_Cloths	thigh_r	geo_Cloths_thigh_r.iff
+geo_Cloths	calf_r	geo_Cloths_calf_r.iff
+geo_Cloths	calf_twist_01_r	geo_Cloths_calf_twist_01_r.iff
+geo_Cloths	foot_r	geo_Cloths_foot_r.iff
+geo_Cloths	ball_r	geo_Cloths_ball_r.iff
+geo_Cloths	thigh_twist_01_r	geo_Cloths_thigh_twist_01_r.iff

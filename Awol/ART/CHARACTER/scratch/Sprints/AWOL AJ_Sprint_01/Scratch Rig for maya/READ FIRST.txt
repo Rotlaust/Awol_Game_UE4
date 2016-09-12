@@ -1,0 +1,8 @@
+This is assuming you already have Epic's ART rigging tools installed in maya.
+
+
+Put the "AWOL_project" folder in the following directory:
+...Epic Games\4.11\Engine\Extras\Maya_AnimationRiggingTools\MayaTools\General\ART\Projects\
+
+Put the "AWOL_thumbnails" folder in the following directory:
+...Epic Games\4.11\Engine\Extras\Maya_AnimationRiggingTools\MayaTools\General\Icons\ART\Thumbnails\
