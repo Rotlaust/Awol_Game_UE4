@@ -1,0 +1,253 @@
+Begin Object Class=K2Node_InputKey Name="K2Node_InputKey_260"
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30180"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30179"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30178"
+   End Object
+   Begin Object Name="EdGraphPin_30180"
+      PinName="Key"
+      Direction=EGPD_Output
+      PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/InputCore.Key')
+      DefaultValue="AnyKey"
+   End Object
+   Begin Object Name="EdGraphPin_30179"
+      PinName="Released"
+      Direction=EGPD_Output
+      PinType=(PinCategory="exec")
+   End Object
+   Begin Object Name="EdGraphPin_30178"
+      PinName="Pressed"
+      Direction=EGPD_Output
+      PinType=(PinCategory="exec")
+      LinkedTo(0)=EdGraphPin'K2Node_CallFunction_4646.EdGraphPin_30187'
+   End Object
+   InputKey=G
+   Pins(0)=EdGraphPin'EdGraphPin_30178'
+   Pins(1)=EdGraphPin'EdGraphPin_30179'
+   Pins(2)=EdGraphPin'EdGraphPin_30180'
+   NodePosX=3040
+   NodePosY=544
+   NodeGuid=29D1F8634EB94974B045ADB92B3F80F2
+End Object
+Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_4646"
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30189"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30188"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30187"
+   End Object
+   Begin Object Name="EdGraphPin_30189"
+      PinName="self"
+      PinFriendlyName="Target"
+      PinToolTip="Target\nActor Reference"
+      PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.Actor')
+   End Object
+   Begin Object Name="EdGraphPin_30188"
+      PinName="then"
+      PinToolTip="\nExec"
+      Direction=EGPD_Output
+      PinType=(PinCategory="exec")
+      LinkedTo(0)=EdGraphPin'K2Node_CreateWidget_14.EdGraphPin_30196'
+   End Object
+   Begin Object Name="EdGraphPin_30187"
+      PinName="execute"
+      PinToolTip="\nExec"
+      PinType=(PinCategory="exec")
+      LinkedTo(0)=EdGraphPin'K2Node_InputKey_260.EdGraphPin_30178'
+   End Object
+   FunctionReference=(MemberName="K2_DestroyActor",bSelfContext=True)
+   Pins(0)=EdGraphPin'EdGraphPin_30187'
+   Pins(1)=EdGraphPin'EdGraphPin_30188'
+   Pins(2)=EdGraphPin'EdGraphPin_30189'
+   NodePosX=3232
+   NodePosY=608
+   NodeGuid=884D2FAA4D99C55BD0A090949519830A
+End Object
+Begin Object Class=K2Node_CreateWidget Name="K2Node_CreateWidget_14"
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30200"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30199"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30198"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30197"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30196"
+   End Object
+   Begin Object Name="EdGraphPin_30200"
+      PinName="OwningPlayer"
+      PinToolTip="Player Controller Reference Owning Player\nThe player that \'owns\' the widget."
+      PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.PlayerController')
+   End Object
+   Begin Object Name="EdGraphPin_30199"
+      PinName="ReturnValue"
+      PinToolTip="User Widget Reference Return Value\nThe spawned object"
+      Direction=EGPD_Output
+      PinType=(PinCategory="object",PinSubCategoryObject=WidgetBlueprintGeneratedClass'/Game/BP_GamePlay/HealthSystem/URdeadScreen.URdeadScreen_C')
+      LinkedTo(0)=EdGraphPin'K2Node_CallFunction_2598.EdGraphPin_30213'
+   End Object
+   Begin Object Name="EdGraphPin_30198"
+      PinName="Class"
+      PinToolTip="User Widget Class Class\nThe object class you want to spawn"
+      PinType=(PinCategory="class",PinSubCategoryObject=Class'/Script/UMG.UserWidget')
+      DefaultObject=WidgetBlueprintGeneratedClass'/Game/BP_GamePlay/HealthSystem/URdeadScreen.URdeadScreen_C'
+   End Object
+   Begin Object Name="EdGraphPin_30197"
+      PinName="then"
+      Direction=EGPD_Output
+      PinType=(PinCategory="exec")
+      LinkedTo(0)=EdGraphPin'K2Node_CallFunction_2598.EdGraphPin_30211'
+   End Object
+   Begin Object Name="EdGraphPin_30196"
+      PinName="execute"
+      PinType=(PinCategory="exec")
+      LinkedTo(0)=EdGraphPin'K2Node_CallFunction_4646.EdGraphPin_30188'
+   End Object
+   Pins(0)=EdGraphPin'EdGraphPin_30196'
+   Pins(1)=EdGraphPin'EdGraphPin_30197'
+   Pins(2)=EdGraphPin'EdGraphPin_30198'
+   Pins(3)=EdGraphPin'EdGraphPin_30199'
+   Pins(4)=EdGraphPin'EdGraphPin_30200'
+   NodePosX=3424
+   NodePosY=640
+   NodeGuid=718CEF644948C6B821ED98A4B20927C7
+End Object
+Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_2598"
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30214"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30213"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30212"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30211"
+   End Object
+   Begin Object Name="EdGraphPin_30214"
+      PinName="ZOrder"
+      PinType=(PinCategory="int")
+      DefaultValue="0"
+      AutogeneratedDefaultValue="0"
+      bAdvancedView=True
+   End Object
+   Begin Object Name="EdGraphPin_30213"
+      PinName="self"
+      PinFriendlyName="Target"
+      PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/UMG.UserWidget')
+      LinkedTo(0)=EdGraphPin'K2Node_CreateWidget_14.EdGraphPin_30199'
+   End Object
+   Begin Object Name="EdGraphPin_30212"
+      PinName="then"
+      Direction=EGPD_Output
+      PinType=(PinCategory="exec")
+      LinkedTo(0)=EdGraphPin'K2Node_VariableSet_1175.EdGraphPin_30223'
+   End Object
+   Begin Object Name="EdGraphPin_30211"
+      PinName="execute"
+      PinType=(PinCategory="exec")
+      LinkedTo(0)=EdGraphPin'K2Node_CreateWidget_14.EdGraphPin_30197'
+   End Object
+   FunctionReference=(MemberParent=Class'/Script/UMG.UserWidget',MemberName="AddToViewport")
+   Pins(0)=EdGraphPin'EdGraphPin_30211'
+   Pins(1)=EdGraphPin'EdGraphPin_30212'
+   Pins(2)=EdGraphPin'EdGraphPin_30213'
+   Pins(3)=EdGraphPin'EdGraphPin_30214'
+   NodePosX=3728
+   NodePosY=640
+   NodeGuid=BD1F457645055F72DD4B09A763EBBC0A
+   AdvancedPinDisplay=Hidden
+End Object
+Begin Object Class=K2Node_VariableSet Name="K2Node_VariableSet_1175"
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30227"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30226"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30225"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30224"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30223"
+   End Object
+   Begin Object Name="EdGraphPin_30227"
+      PinName="self"
+      PinFriendlyName="Target"
+      PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.PlayerController')
+      LinkedTo(0)=EdGraphPin'K2Node_CallFunction_5613.EdGraphPin_30241'
+   End Object
+   Begin Object Name="EdGraphPin_30226"
+      PinName="Output_Get"
+      PinToolTip="Retrieves the value of the variable, can use instead of a separate Get node"
+      Direction=EGPD_Output
+      PinType=(PinCategory="bool")
+      DefaultValue="false"
+      AutogeneratedDefaultValue="false"
+   End Object
+   Begin Object Name="EdGraphPin_30225"
+      PinName="bShowMouseCursor"
+      PinType=(PinCategory="bool")
+      DefaultValue="true"
+      AutogeneratedDefaultValue="false"
+   End Object
+   Begin Object Name="EdGraphPin_30224"
+      PinName="then"
+      Direction=EGPD_Output
+      PinType=(PinCategory="exec")
+   End Object
+   Begin Object Name="EdGraphPin_30223"
+      PinName="execute"
+      PinType=(PinCategory="exec")
+      LinkedTo(0)=EdGraphPin'K2Node_CallFunction_2598.EdGraphPin_30212'
+   End Object
+   VariableReference=(MemberParent=Class'/Script/Engine.PlayerController',MemberName="bShowMouseCursor")
+   SelfContextInfo=NotSelfContext
+   Pins(0)=EdGraphPin'EdGraphPin_30223'
+   Pins(1)=EdGraphPin'EdGraphPin_30224'
+   Pins(2)=EdGraphPin'EdGraphPin_30225'
+   Pins(3)=EdGraphPin'EdGraphPin_30226'
+   Pins(4)=EdGraphPin'EdGraphPin_30227'
+   NodePosX=4032
+   NodePosY=464
+   NodeGuid=303A5D784B238F1C848D5F902419FD51
+End Object
+Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_5613"
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30241"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30240"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30239"
+   End Object
+   Begin Object Class=EdGraphPin Name="EdGraphPin_30238"
+   End Object
+   Begin Object Name="EdGraphPin_30241"
+      PinName="ReturnValue"
+      Direction=EGPD_Output
+      PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.PlayerController')
+      LinkedTo(0)=EdGraphPin'K2Node_VariableSet_1175.EdGraphPin_30227'
+   End Object
+   Begin Object Name="EdGraphPin_30240"
+      PinName="PlayerIndex"
+      PinType=(PinCategory="int")
+      DefaultValue="0"
+      AutogeneratedDefaultValue="0"
+   End Object
+   Begin Object Name="EdGraphPin_30239"
+      PinName="WorldContextObject"
+      PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/CoreUObject.Object')
+      bHidden=True
+   End Object
+   Begin Object Name="EdGraphPin_30238"
+      PinName="self"
+      PinFriendlyName="Target"
+      PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.GameplayStatics')
+      DefaultObject=Default__GameplayStatics
+      bHidden=True
+   End Object
+   bIsPureFunc=True
+   FunctionReference=(MemberParent=Class'/Script/Engine.GameplayStatics',MemberName="GetPlayerController")
+   Pins(0)=EdGraphPin'EdGraphPin_30238'
+   Pins(1)=EdGraphPin'EdGraphPin_30239'
+   Pins(2)=EdGraphPin'EdGraphPin_30240'
+   Pins(3)=EdGraphPin'EdGraphPin_30241'
+   NodePosX=4000
+   NodePosY=592
+   NodeGuid=10840F9541231F5FCBB77F85C60E2DC3
+End Object
